@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestInterface", "TestInterface\TestInterface.vcxproj", "{FFE2CD30-DD65-4F9C-8C18-C61A75732D74}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestInterfacePS", "TestInterface\TestInterfacePS.vcxproj", "{6EFC751D-9A8C-4EAC-9C72-AE3EB9F27F4B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FFE2CD30-DD65-4F9C-8C18-C61A75732D74} = {FFE2CD30-DD65-4F9C-8C18-C61A75732D74}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFE2CD30-DD65-4F9C-8C18-C61A75732D74}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FFE2CD30-DD65-4F9C-8C18-C61A75732D74}.Debug|Win32.Build.0 = Debug|Win32
+		{FFE2CD30-DD65-4F9C-8C18-C61A75732D74}.Release|Win32.ActiveCfg = Release|Win32
+		{FFE2CD30-DD65-4F9C-8C18-C61A75732D74}.Release|Win32.Build.0 = Release|Win32
+		{6EFC751D-9A8C-4EAC-9C72-AE3EB9F27F4B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6EFC751D-9A8C-4EAC-9C72-AE3EB9F27F4B}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

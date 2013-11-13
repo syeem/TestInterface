@@ -1,0 +1,41 @@
+// TestInterface.idl : IDL source for TestInterface
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TestInterface.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(75456A5D-D7EE-4183-BF60-9279DBB90F5D),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface INewInterface : IDispatch{
+	[propget, id(1)] HRESULT InputPath([out, retval] BSTR* pVal);
+	[propput, id(1)] HRESULT InputPath([in] BSTR newVal);
+	[propget, id(2)] HRESULT OutputPath([out, retval] BSTR* pVal);
+	[propput, id(2)] HRESULT OutputPath([in] BSTR newVal);
+	[id(3)] HRESULT Erode(void);
+	[id(4)] HRESULT Sharpen(void);
+	[id(5)] HRESULT Brighten(void);
+};
+[
+	uuid(88D2B289-E62D-4681-A8AB-BD20D8B7E027),
+	version(1.0),
+]
+library TestInterfaceLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(2BF71C4A-E348-464C-90A4-3A47FFF0C382)		
+	]
+	coclass NewInterface
+	{
+		[default] interface INewInterface;
+	};
+};
+
